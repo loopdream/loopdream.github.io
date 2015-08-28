@@ -1,0 +1,29 @@
+---
+title: Welcome to Middleman
+---
+
+<%
+me = data.details
+projects = data.projects.items
+%>
+
+<header class="header">
+	<h1><%=me.name%></h1>
+	<p><%=me.description%></p>
+</header>
+
+<ul class="projects">
+  <% projects.each do | p | %>
+  <li class="project-item">
+  	<% if p.link  %>
+		<% link_to p.link do %>
+			<h3 class="project-client"><%=p.client%></h3>
+			<p class="project-name"><%=p.name%></p>
+		<% end %>
+  	<% else %>
+  		<h3><%=p.client%></h3>
+  		<p><%=p.name%></p>
+  	<% end %>
+  </li>
+  <% end %>
+</ul>

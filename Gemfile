@@ -14,3 +14,22 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem 'middleman-deploy'
+
+gem "middleman-minify-html"
+
+gem "middleman-imageoptim"
+
+gem "middleman-google-analytics"
+
+gem "ceaser-easing"
+
+gem "htmlbeautifier"
+
+gem "middleman-autoprefixer"
+
+gem "bourbon"
+gem "neat"
+gem "bitters"
+gem "compass"
+
+gem "middleman-sprockets"
